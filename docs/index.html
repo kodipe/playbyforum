@@ -1,1 +1,150 @@
-Strona w budowie
+<!doctype html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <title>Katalog gier PBF</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Katalog gier<br>Play By Forum</div>
+    </header>
+    <main>
+      <div class="wrap">
+        <div class="info">
+          <p>
+            Katalog stanowi alfabetyczny spis aktywnych gier opartych na silnikach forumowych.
+          </p>
+          <p><strong>Gier w katalogu: <span id="counter"></span></strong></p>
+          <p>
+            Projekt jest otwartoźrodłowy, więc każdy może wziąć udział w jego współtworzeniu. <br>Jeśli chcesz zgłosić jakąś grę, wprowadzić zmiany w informacjach zamieszczonych w katalogu lub zaproponować rozwinięcie projektu, możesz to <a href="https://github.com/kodipe/playbyforum/issues/new" target="_blank">zgłosić przy pomocy GitHub</a>.
+          </p>
+        </div>
+        <div class="catalog">
+          <div class="catalog-letter">A</div>
+          <div class="catalog-list">
+            <ul>
+              <li><a href="#">Academy Umbrella</a></li>
+              <li><a href="#">Artemida</a></li>
+            </ul>
+          </div>
+          <div class="catalog-letter">B</div>
+          <div class="catalog-list">
+            <ul>
+              <li><a href="#">Benson High</a></li>
+            </ul>
+          </div>
+          <div class="catalog-letter">C</div>
+          <div class="catalog-list">
+            <ul>
+              <li><a href="#">Czarodzieje</a></li>
+              <li><a href="#">Curse Breaker</a></li>-
+              <li><a href="#">Cytadela</a></li>-
+            </ul>
+          </div>
+          <div class="catalog-letter">D</div>
+          <div class="catalog-list">
+            <ul>
+              <li><a href="#">Demigods</a></li>
+              <li><a href="#">Dragon Ball Another Universe Kai</a></li>
+              <li><a href="#">Dreamy Seattle</a></li>
+            </ul>
+          </div>
+          <div class="catalog-letter">H</div>
+          <div class="catalog-list">
+            <ul>
+              <li><a href="#">Herbia</a></li>
+              <li><a href="#">Hope Valley</a></li>
+            </ul>
+          </div>
+          <div class="catalog-letter">K</div>
+          <div class="catalog-list">
+            <ul>
+              <li><a href="#">Kerch</a></li>
+            </ul>
+          </div>
+          <div class="catalog-letter">L</div>
+          <div class="catalog-list">
+            <ul>
+              <li><a href="#">Legends of Westeros</a></li>
+              <li><a href="#">London Eye</a></li>
+              <li><a href="#">Lorne Bay</a></li>
+            </ul>
+          </div>
+          <div class="catalog-letter">M</div>
+          <div class="catalog-list">
+            <ul>
+              <li><a href="#">Magic Lullaby</a></li>
+              <li><a href="#">Mgławica Mocy</a></li>
+              <li><a href="#">Midgard</a></li>
+              <li><a href="#">Mirai Jisei</a></li>
+              <li><a href="#">Monterey</a></li>
+              <li><a href="#">Morsmorde</a></li>
+              <li><a href="#">Mortis</a></li>
+            </ul>
+          </div>
+          <div class="catalog-letter">N</div>
+          <div class="catalog-list">
+            <ul>
+              <li><a href="#">Nekron</a></li>
+              <li><a href="#">New York City</a></li>
+            </ul>
+          </div>
+          <div class="catalog-letter">P</div>
+          <div class="catalog-list">
+            <ul>
+              <li><a href="#">Phoenix Feather</a></li>
+              <li><a href="#">Pokemon Crystal</a></li>
+            </ul>
+          </div>
+          <div class="catalog-letter">R</div>
+          <div class="catalog-list">
+            <ul>
+              <li><a href="#">Riverdale</a></li>
+            </ul>
+          </div>
+          <div class="catalog-letter">S</div>
+          <div class="catalog-list">
+            <ul>
+              <li><a href="#">Shinobi no Mono</a></li>
+              <li><a href="#">Shinobi War</a></li>
+              <li><a href="#">Snow Drop</a></li>
+              <li><a href="#">Spectrofobia</a></li>
+              <li><a href="#">Story of magic</a></li>
+            </ul>
+          </div>
+          <div class="catalog-letter">T</div>
+          <div class="catalog-list">
+            <ul>
+              <li><a href="#">The Gifted</a></li>
+            </ul>
+          </div>
+          <div class="catalog-letter">V</div>
+          <div class="catalog-list">
+            <ul>
+              <li><a href="#">Valar Morghulis</a></li>
+              <li><a href="#">Vattghern</a></li>
+            </ul>
+          </div>
+          <div class="catalog-letter">Y</div>
+          <div class="catalog-list">
+            <ul>
+              <li><a href="#">Yellowlair Oats</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+      const games = document.querySelectorAll(".catalog-list a");
+      const counter = document.querySelector("#counter");
+
+      counter.innerHTML = games.length;
+    </script>
+  </body>
+</html>
